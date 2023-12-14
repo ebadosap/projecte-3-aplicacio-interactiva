@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/estils.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-cuidatge">
+            <a href="./index.html">Cuidatge</a>
+            <h1>Referències bibliogràfiques en Infermeria</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="presentacio">
+            <div class="carrusel">
+                <img src="./images/revista-rol.jpeg" alt="Portada de la revista Rol de enfermeria" width="300px" height="auto">
+            </div>
+            <div class="descripcio">
+                <h2>Descripcio de la base de dades</h2>
+                <p>Cuidatge és una base de dades bibliogràfica produïda pel CRAI Campus Catalunya de la Universitat Rovira i Virgili, l'objectiu de la qual és donar a conèixer la producció científica produïda en l'àmbit de la infermeria i disciplines afins.</p>
+                <p>Conté més de 50.000 referències bibliogràfiques de les revistes publicades en català i castellà des del 1993, any en què es va crear la base de dades, fins a l'actualitat.</p>
+                <p>Aquesta base de dades conté referències bibliogràfiques de les publicacions periòdiques que es reben a la biblioteca, es buiden exhaustivament els títols de revista específics d'infermeria, i les de l'àmbit de la salut que es consideren més rellevants.</p>
+            </div>
+        </div>
+        <div class="menu-cerca">
+            <ul>
+                <li><a href="#">Cerca simple</a></li>
+                <li><a href="#">Cerca avançada</a></li>
+                <li><a href="#">Thesaurus</a></li>
+            </ul>
+            <div id="cercador">
+                <form action="#" method="post">
+                    <input id="cercador" type="search" placeholder="Cercar">
+                </form>	
+                <button type="submit">
+                    <a href="./pages/cerca.html"><img src="./images/lupa.svg" alt="Lupa"></a>
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-secundari">
+            <ul>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Revistes indexades</a></li>
+                <li><a href="#">Servei tècnic</a></li>
+            </ul>
+        </div>
+        <div class="instruccions-cerca">
+            <h2>Instruccions de cerca</h2>
+            <div class="booleans">
+            <h3>Ús operadors booleans</h3>
+            <ul>
+                <li>AND: dieta * diabetis o bé dieta and diabetis</li>
+                <li>OR: infants + adolescencia o bé infants or adolescencia</li>
+                <li>NOT: dieta ^ diabetis si busquem articles sobre dieta però no per a diabètics</li>
+            </ul>
+            </div>
+            <div class="truncaments">
+                <h3>Truncaments</h3>
+                <ul>
+                    <li>Paraules: Immigr$ (recuperació dels conceptes immigrants, immigració, etc.)</li>
+                    <li>Autors: Alberdi$ (Rosa M. Alberdi)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo-URV">
+            <img src="./images/urv-bandera-color.png" alt="Logotip de la Universitat Rovira i Virgili">
+        </div>
+        <div class="informacio">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
