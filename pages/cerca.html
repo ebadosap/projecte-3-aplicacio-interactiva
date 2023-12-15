@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Cuidatge | Resultats de cerca</title>
+    <meta name="description" content="Página de resultats de cerca de la base de dades de Cuidatge">
+    <meta name="keywords" content="base de dades, revistes, articles, infermeria, URV, CRAI">
     <link rel="stylesheet" href="../css/estils.css">
 </head>
 
 <body>
-
     <header>
         <div class="logo-cuidatge">
             <a href="../index.html">Cuidatge</a>
@@ -19,174 +20,189 @@
     </header>
 
     <main>
-        <div class="menu-cerca">
-            <ul>
-                <li><a href="#">Cerca simple</a></li>
-                <li><a href="#">Cerca avançada</a></li>
-                <li><a href="#">Thesaurus</a></li>
-            </ul>
-            <div id="cercador">
-                <form action="#" method="post">
-                    <input id="cercador" type="search" placeholder="Cercar">
-                </form>	
-                <button type="submit">
-                    <a href="../pages/cerca.html"><img src="../images/lupa.svg" alt="Lupa"></a>
-                </button>
-            </div>
-        </div>
-
-        <div class="base-de-dades">
-            <div class="filtres">
-                <h2>Refinar els teus resultats</h2>
-                    <h3>Disponibilitat</h3>
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="cbox1" value="primer-checkbox">
-                            <label for="cbox1">Disponible al CRAI</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox2" value="segon-checkbox">
-                            <label for="cbox2">Disponible en línia</label>
-                        </li>
-                    <h3>Data de publicació</h3>
-                        <h4>Des de - Fins</h4>
+        <article>
+            <nav class="menu-cerca">
+                <ul>
+                    <li><a href="#">Cerca simple</a></li>
+                    <li><a href="#">Cerca avançada</a></li>
+                    <li><a href="#">Thesaurus</a></li>
+                </ul>
+                <div id="cercador">
+                    <form action="#" method="post">
+                        <input id="cercador" type="search" placeholder="Cercar">
+                    </form>	
+                    <button type="submit">
+                        <a href="../pages/cerca.html"><img src="../images/lupa.svg" alt="Lupa"></a>
+                    </button>
+                </div>
+            </nav>
+            <section class="base-de-dades">
+                <div class="filtres">
+                    <h2>Refinar els teus resultats</h2>
+                        <h3>Disponibilitat</h3>
                         <ul>
                             <li>
-                                <input type="checkbox" id="cbox3" value="tercer-checkbox">
-                                <label for="cbox3">
-                                    <input type="date">
-                                    <input type="date">
-                                </label>
+                                <input type="checkbox" id="cbox1" value="primer-checkbox">
+                                <label for="cbox1">Disponible al CRAI</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox2" value="segon-checkbox">
+                                <label for="cbox2">Disponible en línia</label>
+                            </li>
+                        <h3>Data de publicació</h3>
+                            <h4>Des de - Fins</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cbox3" value="tercer-checkbox">
+                                    <label for="cbox3">
+                                        <input type="date">
+                                        <input type="date">
+                                    </label>
+                                </li>
+                            </ul>
+                        <h3>Autor</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="cbox4" value="quart-checkbox">
+                                <label for="cbox4">Autor 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox5" value="cinque-checkbox">
+                                <label for="cbox5">Autor 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox6" value="sise-checkbox">
+                                <label for="cbox6">Autor 3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox7" value="sete-checkbox">
+                                <label for="cbox7">Autor 4</label>
                             </li>
                         </ul>
-                    <h3>Autor</h3>
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="cbox4" value="quart-checkbox">
-                            <label for="cbox4">Autor 1</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox5" value="cinque-checkbox">
-                            <label for="cbox5">Autor 2</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox6" value="sise-checkbox">
-                            <label for="cbox6">Autor 3</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox7" value="sete-checkbox">
-                            <label for="cbox7">Autor 4</label>
-                        </li>
-                    </ul>
-                    <h3>Títol revista</h3>
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="cbox8" value="vuite-checkbox">
-                            <label for="cbox8">Revista 1</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox9" value="nove-checkbox">
-                            <label for="cbox9">Revista 2</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox10" value="dese-checkbox">
-                            <label for="cbox10">Revista 3</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="cbox11" value="onze-checkbox">
-                            <label for="cbox11">Revista 4</label>
-                        </li>
-                    </ul>
-                    <h3>Instruccions de cerca</h3>
-            </div>
-            <div class="resultats">
-                <h2>Presentació de resultats</h2>
-                <div class="presentacio-resultats">
-                    <div class="numero-cites">
-                    <p>Número de cites per pàgina</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        <h3>Títol revista</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="cbox8" value="vuite-checkbox">
+                                <label for="cbox8">Revista 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox9" value="nove-checkbox">
+                                <label for="cbox9">Revista 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox10" value="dese-checkbox">
+                                <label for="cbox10">Revista 3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cbox11" value="onze-checkbox">
+                                <label for="cbox11">Revista 4</label>
+                            </li>
+                        </ul>
+                        <h3>Instruccions de cerca</h3>
+                </div>
+                <div class="resultats">
+                    <h2>Presentació de resultats</h2>
+                    <div class="presentacio-resultats">
+                        <div class="numero-cites">
+                        <p>Número de cites per pàgina</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        </div>
+                        <div class="tipus-informacio">
+                        <p>Tipus d'informació</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        </div>
+                        <div class="ordenat-per">
+                        <p>Ordenat per</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        </div>
                     </div>
-                    <div class="tipus-informacio">
-                    <p>Tipus d'informació</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                    <div class="resultats-cerca">
+                        <h2>Resultats de la cerca</h2>
+                        <div class="primer-resultat-cerca">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cbox12" value="dotze-checkbox">
+                                    <label for="cbox12">Títol 1</label>
+                                </li>
+                                <li>Autor</li>
+                                <li>Revista</li>
+                                <li>Ubicació</li>
+                            </ul>
+                        </div>
+                        <div class="segon-resultat-cerca">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cbox13" value="tretze-checkbox">
+                                    <label for="cbox13">Títol 2</label>
+                                </li>
+                                <li>Autor</li>
+                                <li>Revista</li>
+                                <li>Ubicació</li>
+                            </ul>
+                        </div>
+                        <div class="tercer-resultat-cerca">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cbox14" value="catorze-checkbox">
+                                    <label for="cbox14">Títol 3</label>
+                                </li>
+                                <li>Autor</li>
+                                <li>Revista</li>
+                                <li>Ubicació</li>
+                            </ul>
+                        </div>
+                        <div class="quart-resultat-cerca">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cbox15" value="quinze-checkbox">
+                                    <label for="cbox15">Títol 4</label>
+                                </li>
+                                <li>Autor</li>
+                                <li>Revista</li>
+                                <li>Ubicació</li>
+                            </ul>
+                        </div>
+                        <div class="cinque-resultat-cerca">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cbox16" value="setze-checkbox">
+                                    <label for="cbox16">Títol 5</label>
+                                </li>
+                                <li>Autor</li>
+                                <li>Revista</li>
+                                <li>Ubicació</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="ordenat-per">
-                    <p>Ordenat per</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                    <div class="numero-pagines">
+                        <img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra" width="30px"height="auto">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <img src="../images/fletxa-dreta.svg" alt="Fletxa dreta" width="30px"height="auto">
                     </div>
                 </div>
-                <div class="resultats-cerca">
-                    <h2>Resultats de la cerca</h2>
-                    <div class="primer-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox12" value="dotze-checkbox">
-                                <label for="cbox12">Títol 1</label>
-                            </li>
-                            <li>Autor</li>
-                            <li>Revista</li>
-                            <li>Ubicació</li>
-                        </ul>
-                    </div>
-                    <div class="segon-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox13" value="tretze-checkbox">
-                                <label for="cbox13">Títol 2</label>
-                            </li>
-                            <li>Autor</li>
-                            <li>Revista</li>
-                            <li>Ubicació</li>
-                        </ul>
-                    </div>
-                    <div class="tercer-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox14" value="catorze-checkbox">
-                                <label for="cbox14">Títol 3</label>
-                            </li>
-                            <li>Autor</li>
-                            <li>Revista</li>
-                            <li>Ubicació</li>
-                        </ul>
-                    </div>
-                    <div class="quart-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox15" value="quinze-checkbox">
-                                <label for="cbox15">Títol 4</label>
-                            </li>
-                            <li>Autor</li>
-                            <li>Revista</li>
-                            <li>Ubicació</li>
-                        </ul>
-                    </div>
-                    <div class="cinque-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox16" value="setze-checkbox">
-                                <label for="cbox16">Títol 5</label>
-                            </li>
-                            <li>Autor</li>
-                            <li>Revista</li>
-                            <li>Ubicació</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="numero-pagines">
-                    <img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra" width="30px"height="auto">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <img src="../images/fletxa-dreta.svg" alt="Fletxa dreta" width="30px"height="auto">
-                </div>
-            </div>
-        </div>
+            </section>
+        </article>
     </main>
 
     <footer>
         <div class="logo-URV">
             <img src="../images/urv-bandera-color.png" alt="Logotip de la Universitat Rovira i Virgili">
         </div>
+        <nav class="menu-suport">
+            <ul>
+                <li>
+                    <a href="#">Ajuda</a>
+                </li>
+                <li>
+                    <a href="#">Revistes indexades</a>
+                </li>
+                <li>
+                    <a href="#">Servei tècnic</a>
+                </li>
+            </ul>
+        </nav>
         <div class="informacio">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>PR Projecte 3. Aplicació interactiva, 2023.</p>
+            <p><strong>Enric Badosa Porcel</strong></p>
         </div>
     </footer>
 

@@ -64,6 +64,7 @@ footer {
     gap: 16px;
     flex-wrap: wrap;
     background-color: #BDBBBB;
+    border: 1px solid #BDBBBB;
 }
 
 .logo-URV {
@@ -111,6 +112,7 @@ footer {
 }
 
 .informacio p {
+    padding: 3px;;
     text-align: center;
     font-size: 14px;
 }
