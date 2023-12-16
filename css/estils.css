@@ -357,6 +357,11 @@ footer {
     margin: 20px;
  }
 
+ .resultats-cerca a {
+    text-decoration: none;
+    color: #90292A;
+ }
+
 .numero-pagines {
     margin: 20px;
     padding: 24px;
@@ -369,9 +374,19 @@ footer {
 
  /*===== FITXA BIBLIOGRÀFICA =====*/
 
+ .fletxa-torna-cerca {
+    margin: 3% 0 3% 5%;
+ }
+
+ .fletxa-torna-cerca img {
+    width: 50px;
+    height: auto;
+ }
+
  .fitxa {
-    margin: 5%;
+    margin: 0 5% 5% 5%;
     border: 1px solid #000000;
+    padding-bottom: 3%;
 
  }
 
@@ -380,8 +395,13 @@ footer {
     padding: 1%;
  }
 
- .fitxa p {
+ .fitxa li {
     margin: 1% 4% 1% 6%;
     padding: 1%;
     text-align: justify;
+ }
+
+ .fitxa a {
+    text-decoration: none;
+    color:#90292A;
  }
