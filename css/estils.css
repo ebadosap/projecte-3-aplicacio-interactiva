@@ -57,45 +57,63 @@ ul {
 }
 
 footer {
-    padding: 16px;
+    padding: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: 14px;
     flex-wrap: wrap;
     background-color: #BDBBBB;
-    border: 1px solid #BDBBBB;
 }
 
 .logo-URV {
-    height: 120px;
-    width: auto;
+    width: 250px;
+    height: auto;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.logo-URV img {
+    height: auto;
+    width: 250px;
+}
+
 .menu-suport {
-    height: 120px;
-    width: auto;
-    min-width: 350px;
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu-suport ul {
     display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 8px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu-suport li {
+    min-width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+}
+
+.menu-suport a {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #231F20;
 }
 
 .informacio {
-    height: 120px;
-    width: auto;
+    min-width: 350px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -103,27 +121,10 @@ footer {
     justify-content: center;
 }
 
-.logo-URV img {
-    height: auto;
-    width: 300px;
-}
-
-.menu-suport li {
-    padding: 5px;
-}
-
-.menu-suport a {
-    font-size: 16px;
-    text-decoration: none;
-    color: #231F20;
-}
-
 .informacio p {
     padding: 2px;
-    text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
-
 
 /*===== INDEX =====*/
 
@@ -140,6 +141,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carrusel img {
+    width: 300px;
+    height: auto;
 }
 
 .descripcio {
