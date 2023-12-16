@@ -86,6 +86,13 @@ footer {
     justify-content: center;
 }
 
+.menu-suport ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+}
+
 .informacio {
     height: 120px;
     width: auto;
