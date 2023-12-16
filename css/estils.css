@@ -365,3 +365,22 @@ footer {
     justify-content: center;
     gap: 16px;
 }
+
+
+ /*===== FITXA BIBLIOGRÀFICA =====*/
+
+ .fitxa {
+    margin: 60px;
+    border: 1px solid #000000;
+
+ }
+
+ .fitxa h2 {
+    margin: 20px 40px 10px 40px;
+    padding: 15px;
+ }
+
+ .fitxa p {
+    margin: 15px 40px 15px 60px;
+    padding: 15px;
+ }
