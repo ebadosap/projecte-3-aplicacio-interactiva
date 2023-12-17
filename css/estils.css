@@ -167,26 +167,25 @@ footer {
     padding-bottom: 6px;
 }
 
-.menu-cerca {
+.motor-de-cerca {
     padding-bottom: 8px;
     background-color: #90292b67;
     margin: 60px auto;
+ }
+
+.menu-hamburguesa {
+    display: none;
 }
 
-.menu-cerca ul,
-.menu-secundari ul {
+.menu-cerca ul {
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.menu-cerca ul {
     background-color: #90292A;
 }
 
-.menu-cerca li,
-.menu-secundari li {
+.menu-cerca li {
     width: 320px;
     height: auto;
     text-align: center;
@@ -194,8 +193,7 @@ footer {
     margin: auto;
 }
 
-.menu-cerca a,
-.menu-secundari a {
+.menu-cerca a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 24px;
@@ -204,15 +202,19 @@ footer {
 #cercador {
     margin: 12px auto;
     height: auto;
-    padding: 8px 100px 8px 5px;
+    padding: 8px 20px 8px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
 }
 
+#cercador input {
+    padding-right: 50px;
+}
+
 #cercador form {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #cercador a {
@@ -232,13 +234,6 @@ footer {
     width: 22px;
     height: auto;
  }
-
-
-.menu-secundari {
-    background-color: #A4A9AD;
-    margin: 60px auto;
-}
-
 
 .instruccions-cerca {
     display: flex;
@@ -447,6 +442,38 @@ footer {
 
  @media (max-width: 950px) {
 
+    .menu-hamburguesa {
+        display: flex;
+        width: 50px;
+        height: auto;
+        min-width: 50px;
+        margin: 13px 20px 0 0;
+    }
+
+    .motor-de-cerca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cercador {
+        margin: 10px 0 5px 0;
+    }
+
+    #cercador button{
+        margin-top: 5px;
+    }
+    
+
+    #cercador form {
+        margin: auto;
+    }
+    
+    .menu-cerca {
+        display: none;
+    }
+
+
     .filtres{
         display: none;
     }
@@ -464,11 +491,12 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 1px solid #000000;
     }
     #menu-base-de-dades li{
+        flex: 1 0 33%;
         padding: 10px;
         text-align: center;
-        border: 1px solid #000000;
     }
 
     #menu-base-de-dades a{
