@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuidatge | Resultats de cerca</title>
     <meta name="description" content="Pàgina de resultats de cerca de la base de dades de Cuidatge">
     <meta name="keywords" content="base de dades, revistes, articles, infermeria, URV, CRAI">
+
+    <title>Cuidatge | Resultats de cerca</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/estils.css">
 </head>
 
@@ -20,7 +24,9 @@
     </header>
 
     <main>
+
         <section>
+
             <nav class="menu-cerca">
                 <ul>
                     <li><a href="#">Cerca simple</a></li>
@@ -36,10 +42,14 @@
                     </button>
                 </div>
             </nav>
-            <article class="base-de-dades">
-                <div class="filtres">
-                    <h2>Refinar els teus resultats</h2>
-                        <h3>Disponibilitat</h3>
+
+        </section>
+
+        <section class="base-de-dades">
+
+            <article class="filtres">
+                <h2>Refinar els teus resultats</h2>
+                    <h3>Disponibilitat</h3>
                         <ul>
                             <li>
                                 <input type="checkbox" id="cbox1" value="primer-checkbox">
@@ -49,8 +59,9 @@
                                 <input type="checkbox" id="cbox2" value="segon-checkbox">
                                 <label for="cbox2">Disponible en línia</label>
                             </li>
-                        <h3>Data de publicació</h3>
-                            <h4>Des de - Fins</h4>
+                        </ul>
+                    <h3>Data de publicació</h3>
+                        <h4>Des de - Fins</h4>
                             <ul>
                                 <li>
                                     <input type="checkbox" id="cbox3" value="tercer-checkbox">
@@ -60,7 +71,7 @@
                                     </label>
                                 </li>
                             </ul>
-                        <h3>Autor</h3>
+                    <h3>Autor</h3>
                         <ul>
                             <li>
                                 <input type="checkbox" id="cbox4" value="quart-checkbox">
@@ -79,7 +90,7 @@
                                 <label for="cbox7">Autor 4</label>
                             </li>
                         </ul>
-                        <h3>Títol revista</h3>
+                    <h3>Títol revista</h3>
                         <ul>
                             <li>
                                 <input type="checkbox" id="cbox8" value="vuite-checkbox">
@@ -98,19 +109,39 @@
                                 <label for="cbox11">Revista 4</label>
                             </li>
                         </ul>
-                        <h3>Instruccions de cerca</h3>
-                </div>
-                <div class="resultats">
-                    <h2>Presentació de resultats</h2>
+                    <h3>Instruccions de cerca</h3>
+            </article>
+
+            <article class="resultats">
+                <h2>Presentació de resultats</h2>
                     <div class="presentacio-resultats">
-                        <div class="numero-cites">
-                        <p>Número de cites per pàgina</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        <div class="grup">
+                            <label for="area" class="form-label"></label>
+                            <select id="area" class="form-control" name="referencies">
+                                <option value="-1">Resultats per pàgina</option>
+                                <option value="1">10</option>
+                                <option value="2">25</option>
+                                <option value="3">50</option>
+                            </select>	
                         </div>
-                        <div class="tipus-informacio">
-                        <p>Tipus d'informació</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        <div class="grup">
+                            <label for="area" class="form-label"></label>
+                            <select id="area" class="form-control" name="informacio">
+                                <option value="-1">Tipus d'informació</option>
+                                <option value="1">Títol</option>
+                                <option value="2">Autor</option>
+                                <option value="3">Revista</option>
+                                <option value="4">Disponibilitat</option>
+                            </select>	
                         </div>
-                        <div class="ordenat-per">
-                        <p>Ordenat per</p><img src="../images/fletxa-avall.svg" alt="Fletxa avall" width="30px"height="auto">
+                        <div class="grup">
+                            <label for="area" class="form-label"></label>
+                            <select id="area" class="form-control" name="ordre">
+                                <option value="-1">Ordenat per</option>
+                                <option value="1">Data - El més nou</option>
+                                <option value="2">Data - La més antiga</option>
+                                <option value="3">Títol</option>
+                            </select>
                         </div>
                     </div>
                     <div class="resultats-cerca">
@@ -185,7 +216,7 @@
                             <li><a href="#"><img src="../images/fletxa-dreta.svg" alt="Fletxa dreta" width="25px"height="auto"></a></li>
                         </ul>
                     </nav>
-                </div>
+
             </article>
         </section>
     </main>
