@@ -21,7 +21,7 @@ body {
 
 header {
     width: auto;
-    padding: 20px 0 25px 0;
+    padding: 10px 0 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +133,8 @@ footer {
     flex-wrap: wrap;
     margin: 60px auto;
     gap: 20px;
+    padding: 2% 0 2% 0;
+    background-color: #DBD9D6;
 }
 
 .carrusel {
@@ -144,7 +146,7 @@ footer {
 }
 
 .carrusel img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
@@ -240,6 +242,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 50px;
+    background-color: #DBD9D6;
 }
 
 .instruccions-cerca h2 {
@@ -290,10 +293,11 @@ footer {
 
  .filtres {
     display: flex;
+    min-width: 300px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border: 1px solid #000000;
+    background-color: #DBD9D6;
     margin-left: 12px;
  }
 
@@ -312,14 +316,13 @@ footer {
 
  .filtres li {
     margin: 5px 0 5px 0;
-    padding: 10px;
+    padding: 8px 0 8px 20px;
  }
 
  .resultats {
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 1px solid #000000;
  }
 
 
@@ -331,6 +334,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 20px;
+    background-color: #DBD9D6;
  }
 
  .presentacio-resultats h2 {
@@ -345,9 +349,10 @@ footer {
     align-items: center;
 }
 
- .resultats-cerca {
-    border-top: 1px solid #000000;
- }
+.resultats-cerca {
+    background-color: #DBD9D6;
+    margin-top: 10px;
+}
 
  .resultats-cerca input {
     margin-left: -15px;
@@ -367,11 +372,11 @@ footer {
  }
 
 .numero-pagines {
-    margin: 40px;
-    flex: 1;
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #DBD9D6;
 }
 
 .numero-pagines img {
@@ -416,8 +421,8 @@ footer {
 
  .fitxa {
     margin: 0 5% 5% 5%;
-    border: 1px solid #000000;
-    padding-bottom: 3%;
+    padding: 1% 0 3% 0;
+    background-color: #DBD9D6;
 
  }
 
@@ -491,17 +496,20 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #A4A9AD;
         border: 1px solid #000000;
     }
     #menu-base-de-dades li{
         flex: 1 0 33%;
         padding: 10px;
         text-align: center;
+   
+
     }
 
     #menu-base-de-dades a{
         text-decoration: none;
-        color: #231F20;
+        color: #FFFFFF;
     }
 
 
