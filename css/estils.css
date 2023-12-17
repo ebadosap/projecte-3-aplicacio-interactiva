@@ -289,6 +289,10 @@ footer {
     margin-bottom: 60px;
  }
 
+ #menu-base-de-dades {
+    display: none;
+ }
+
  .filtres {
     display: flex;
     flex-direction: column;
@@ -323,26 +327,28 @@ footer {
     border: 1px solid #000000;
  }
 
- .presentacio-resultats {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
- }
-
- .presentacio-resultats div {
-    display: flex;
-    border: 1px solid #000000;
- }
-
 
  .resultats h2 {
     padding: 15px;
  }
 
- .presentacio-resultats p {
-    padding: 5px 60px 5px 5px;
+ .presentacio-resultats {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
  }
+
+ .presentacio-resultats h2 {
+    flex: 1 0 100%;
+ }
+
+.presentacio-resultats div{
+    padding: 20px;
+    flex: 1 0 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
  .resultats-cerca {
     border-top: 1px solid #000000;
@@ -434,4 +440,43 @@ footer {
  .fitxa a {
     text-decoration: none;
     color:#90292A;
+ }
+
+
+ /*===== MEDIA QUERIES =====*/
+
+ @media (max-width: 950px) {
+
+    .filtres{
+        display: none;
+    }
+
+    .presentacio-resultats {
+        display: none;
+    }
+
+    .numero-pagines {
+        display: none;
+    }
+
+    #menu-base-de-dades {
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-base-de-dades li{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #000000;
+    }
+
+    #menu-base-de-dades a{
+        text-decoration: none;
+        color: #231F20;
+    }
+
+
+
+
  }

@@ -45,8 +45,17 @@
 
         </section>
 
-        <section class="base-de-dades">
+        <!-- Menú dispositius mòbils -->
+        <nav>
+            <ul id="menu-base-de-dades">
+                <li><a href="#" title="Refinar els teus resultats">Refinar els teus resultats</a></li>
+                <li><a href="#" title="Presentació dels resultats">Presentació dels resultats</a></li>
+                <li><a href="#" title="Resultats de la cerca">Resultats de la cerca</a></li>
+            </ul>
+        </nav>
+        <!--./Menú dispositius mòbils -->
 
+        <section class="base-de-dades">
             <article class="filtres">
                 <h2>Refinar els teus resultats</h2>
                     <h3>Disponibilitat</h3>
@@ -113,109 +122,112 @@
             </article>
 
             <article class="resultats">
-                <h2>Presentació de resultats</h2>
-                    <div class="presentacio-resultats">
-                        <div class="grup">
-                            <label for="area" class="form-label"></label>
-                            <select id="area" class="form-control" name="referencies">
-                                <option value="-1">Resultats per pàgina</option>
-                                <option value="1">10</option>
-                                <option value="2">25</option>
-                                <option value="3">50</option>
-                            </select>	
-                        </div>
-                        <div class="grup">
-                            <label for="area" class="form-label"></label>
-                            <select id="area" class="form-control" name="informacio">
-                                <option value="-1">Tipus d'informació</option>
-                                <option value="1">Títol</option>
-                                <option value="2">Autor</option>
-                                <option value="3">Revista</option>
-                                <option value="4">Disponibilitat</option>
-                            </select>	
-                        </div>
-                        <div class="grup">
-                            <label for="area" class="form-label"></label>
-                            <select id="area" class="form-control" name="ordre">
-                                <option value="-1">Ordenat per</option>
-                                <option value="1">Data - El més nou</option>
-                                <option value="2">Data - La més antiga</option>
-                                <option value="3">Títol</option>
-                            </select>
-                        </div>
+
+                <div class="presentacio-resultats">
+                    <h2>Presentació de resultats</h2>
+                    <div class="grup">
+                        <label for="area" class="form-label"></label>
+                        <select id="area" class="form-control" name="referencies">
+                            <option value="-1">Resultats per pàgina</option>
+                            <option value="1">10</option>
+                            <option value="2">25</option>
+                            <option value="3">50</option>
+                        </select>	
                     </div>
-                    <div class="resultats-cerca">
-                        <h2>Resultats de la cerca</h2>
-                        <div class="primer-resultat-cerca">
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="cbox12" value="dotze-checkbox">
-                                    <label for="cbox12">Títol:</label>
-                                    <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
-                                </li>
-                                <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
-                                <li>Revista: RIDEC</li>
-                                <li>Disponibilitat: Disponible en línia</li>
-                            </ul>
-                        </div>
-                        <div class="segon-resultat-cerca">
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="cbox13" value="tretze-checkbox">
-                                    <label for="cbox13">Títol: </label>
-                                    <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
-                                </li>
-                                <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
-                                <li>Revista: RIDEC</li>
-                                <li>Disponibilitat: Disponible en línia</li>
-                            </ul>
-                        </div>
-                        <div class="tercer-resultat-cerca">
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="cbox14" value="catorze-checkbox">
-                                    <label for="cbox14">Títol: </label>
-                                    <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
-                                </li>
-                                <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
-                                <li>Revista: RIDEC</li>
-                                <li>Disponibilitat: Disponible en línia</li>
-                            </ul>
-                        </div>
-                        <div class="quart-resultat-cerca">
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="cbox15" value="quinze-checkbox">
-                                    <label for="cbox15">Títol: </label>
-                                    <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
-                                </li>
-                                <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
-                                <li>Revista: RIDEC</li>
-                                <li>Disponibilitat: Disponible en línia</li>
-                            </ul>
-                        </div>
-                        <div class="cinque-resultat-cerca">
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="cbox16" value="setze-checkbox">
-                                    <label for="cbox16">Títol:</label>
-                                    <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
-                                </li>
-                                <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
-                                <li>Revista: RIDEC</li>
-                                <li>Disponibilitat: Disponible en línia</li>
-                            </ul>
-                        </div>
+                    <div class="grup">
+                        <label for="area" class="form-label"></label>
+                        <select id="area" class="form-control" name="informacio">
+                            <option value="-1">Tipus d'informació</option>
+                            <option value="1">Títol</option>
+                            <option value="2">Autor</option>
+                            <option value="3">Revista</option>
+                            <option value="4">Disponibilitat</option>
+                        </select>	
                     </div>
-                    <nav class="numero-pagines">
+                    <div class="grup">
+                        <label for="area" class="form-label"></label>
+                        <select id="area" class="form-control" name="ordre">
+                            <option value="-1">Ordenat per</option>
+                            <option value="1">Data - El més nou</option>
+                            <option value="2">Data - La més antiga</option>
+                            <option value="3">Títol</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="resultats-cerca">
+                    <h2>Resultats de la cerca</h2>
+                    <div class="primer-resultat-cerca">
                         <ul>
-                            <li><a href="#"><img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra" width="25px"height="auto"></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#"><img src="../images/fletxa-dreta.svg" alt="Fletxa dreta" width="25px"height="auto"></a></li>
+                            <li>
+                                <input type="checkbox" id="cbox12" value="dotze-checkbox">
+                                <label for="cbox12">Títol:</label>
+                                <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
+                            </li>
+                            <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
+                            <li>Revista: RIDEC</li>
+                            <li>Disponibilitat: Disponible en línia</li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div class="segon-resultat-cerca">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="cbox13" value="tretze-checkbox">
+                                <label for="cbox13">Títol: </label>
+                                <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
+                            </li>
+                            <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
+                            <li>Revista: RIDEC</li>
+                            <li>Disponibilitat: Disponible en línia</li>
+                        </ul>
+                    </div>
+                    <div class="tercer-resultat-cerca">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="cbox14" value="catorze-checkbox">
+                                <label for="cbox14">Títol: </label>
+                                <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
+                            </li>
+                            <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
+                            <li>Revista: RIDEC</li>
+                            <li>Disponibilitat: Disponible en línia</li>
+                        </ul>
+                    </div>
+                    <div class="quart-resultat-cerca">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="cbox15" value="quinze-checkbox">
+                                <label for="cbox15">Títol: </label>
+                                <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
+                            </li>
+                            <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
+                            <li>Revista: RIDEC</li>
+                            <li>Disponibilitat: Disponible en línia</li>
+                        </ul>
+                    </div>
+                    <div class="cinque-resultat-cerca">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="cbox16" value="setze-checkbox">
+                                <label for="cbox16">Títol:</label>
+                                <a href="./fitxa-bibliografica.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
+                            </li>
+                            <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
+                            <li>Revista: RIDEC</li>
+                            <li>Disponibilitat: Disponible en línia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="numero-pagines">
+                    <ul>
+                        <li><a href="#"><img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra" width="25px"height="auto"></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><img src="../images/fletxa-dreta.svg" alt="Fletxa dreta" width="25px"height="auto"></a></li>
+                    </ul>
+                </nav>
 
             </article>
         </section>
