@@ -83,8 +83,8 @@ footer {
 .menu-suport {
     flex: 1;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
 }
 
 .menu-suport ul {
@@ -369,12 +369,39 @@ footer {
  }
 
 .numero-pagines {
-    margin: 20px;
-    padding: 24px;
+    margin: 40px;
+    flex: 1;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+}
+
+.numero-pagines img {
+    display: flex;
     justify-content: center;
-    gap: 16px;
+    align-items: center;
+    width: 25px;
+    height: auto;
+}
+
+.numero-pagines a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+.numero-pagines ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numero-pagines li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+    font-size: 18px;
 }
 
 
