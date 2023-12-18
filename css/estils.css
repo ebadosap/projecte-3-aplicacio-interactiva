@@ -20,26 +20,28 @@ body {
 }
 
 header {
-    width: auto;
-    padding: 10px 0 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #BDBBBB;
+    
 }
 
-.logo-cuidatge a {
-    color: #90292A;
+.URV {
+    padding: 8px 0 6px 0;
+    background-color: #90292A;
+}
+
+.URV img {
+    margin-left: 28px;
+}
+
+.logo-cuidatge {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    font-size: 60px;
-    font-weight: bold;
+    align-items: center;
+    border-bottom: 1px solid #000000;
 }
 
 h1 {
-    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #000000;
 }
 
 p {
@@ -49,7 +51,7 @@ p {
 main {
 	overflow: hidden;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1200px;
 }
 
 ul {
@@ -63,10 +65,11 @@ footer {
     justify-content: space-between;
     gap: 14px;
     flex-wrap: wrap;
-    background-color: #BDBBBB;
+    background-color: #90292A;
+    color: #FFFFFF;
 }
 
-.logo-URV {
+.logo-CRAI {
     width: 250px;
     height: auto;
     flex: 1;
@@ -75,7 +78,7 @@ footer {
     justify-content: center;
 }
 
-.logo-URV img {
+.logo-CRAI img {
     height: auto;
     width: 250px;
 }
@@ -109,7 +112,7 @@ footer {
     text-align: center;
     font-size: 14px;
     text-decoration: none;
-    color: #231F20;
+    color: #FFFFFF;
 }
 
 .informacio {
@@ -131,7 +134,7 @@ footer {
 .presentacio {
     display: flex;
     flex-wrap: wrap;
-    margin: 60px auto;
+    margin: 20px auto;
     gap: 20px;
     padding: 2% 0 2% 0;
     background-color: #DBD9D6;
@@ -172,7 +175,7 @@ footer {
 .motor-de-cerca {
     padding-bottom: 8px;
     background-color: #90292b67;
-    margin: 60px auto;
+    margin: 20px auto;
  }
 
 .menu-hamburguesa {
@@ -241,7 +244,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color: #DBD9D6;
 }
 
@@ -284,7 +287,7 @@ footer {
  .base-de-dades {
     display: flex;
     gap: 36px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
  }
 
  #menu-base-de-dades {
@@ -298,7 +301,7 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #DBD9D6;
-    margin-left: 12px;
+
  }
 
  .filtres h2 {
@@ -306,11 +309,12 @@ footer {
  }
 
  .filtres h3 {
-    margin: 20px 0 5px 0;
+    margin: 20px 0 5px 10px;
     padding: 10px;
  }
 
  .filtres h4 {
+    margin-left: 10px;
     padding: 5px 0 0 10px;
  }
 
@@ -411,7 +415,7 @@ footer {
  /*===== FITXA BIBLIOGRÀFICA =====*/
 
  .fletxa-torna-cerca {
-    margin: 3% 0 3% 5%;
+    margin: 20px 0 20px 0;
  }
 
  .fletxa-torna-cerca img {
@@ -420,7 +424,7 @@ footer {
  }
 
  .fitxa {
-    margin: 0 5% 5% 5%;
+    margin: 0 0 20px 0;
     padding: 1% 0 3% 0;
     background-color: #DBD9D6;
 
@@ -492,7 +496,7 @@ footer {
     }
 
     #menu-base-de-dades {
-        margin: 40px auto;
+        margin: 20px 0 10px 0;
         display: flex;
         justify-content: center;
         align-items: center;
