@@ -19,8 +19,26 @@ body {
     color: #231F20;
 }
 
+main {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*===== HEADER =====*/
+
 header {
-    
+    width: auto;
+    height: auto;
 }
 
 .URV {
@@ -39,95 +57,6 @@ header {
     border-bottom: 1px solid #000000;
 }
 
-h1 {
-    color: #FFFFFF;
-    border: 1px solid #000000;
-}
-
-p {
-    font-size: 18px;
-}
-
-main {
-	overflow: hidden;
-	margin: 0 auto;
-	max-width: 1200px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-footer {
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    flex-wrap: wrap;
-    background-color: #90292A;
-    color: #FFFFFF;
-}
-
-.logo-CRAI {
-    width: 250px;
-    height: auto;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-CRAI img {
-    height: auto;
-    width: 250px;
-}
-
-.menu-suport {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu-suport ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.menu-suport li {
-    min-width: 130px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-    padding: 5px;
-}
-
-.menu-suport a {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.informacio {
-    min-width: 350px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.informacio p {
-    padding: 2px;
-    font-size: 14px;
-}
 
 /*===== INDEX =====*/
 
@@ -309,7 +238,7 @@ footer {
  }
 
  .filtres h3 {
-    margin: 20px 0 5px 10px;
+    margin: 10px 0 0 10px;
     padding: 10px;
  }
 
@@ -320,7 +249,7 @@ footer {
 
  .filtres li {
     margin: 5px 0 5px 0;
-    padding: 8px 0 8px 20px;
+    padding: 0 0 6px 20px;
  }
 
  .resultats {
@@ -415,10 +344,12 @@ footer {
  /*===== FITXA BIBLIOGRÀFICA =====*/
 
  .fletxa-torna-cerca {
-    margin: 20px 0 20px 0;
+    background-color: #DBD9D6;
+    margin-top: 20px;
  }
 
  .fletxa-torna-cerca img {
+    margin: 20px 0 0 20px;
     width: 50px;
     height: auto;
  }
@@ -431,12 +362,12 @@ footer {
  }
 
  .fitxa h2 {
-    margin: 2% 4% 2% 4%;
+    margin: 0 4% 2% 6%;
     padding: 1%;
  }
 
  .fitxa li {
-    margin: 1% 4% 1% 6%;
+    margin: 1% 8% 1% 8%;
     padding: 1%;
     text-align: justify;
  }
@@ -447,9 +378,91 @@ footer {
  }
 
 
+ /*===== FOOTER =====*/
+
+ footer {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    background-color: #90292A;
+    color: #FFFFFF;
+}
+
+.logo-CRAI {
+    width: 250px;
+    height: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-CRAI img {
+    height: auto;
+    width: 300px;
+}
+
+.menu-suport {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-suport ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu-suport li {
+    min-width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+}
+
+.menu-suport a {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.informacio {
+    min-width: 350px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacio p {
+    padding: 2px;
+    font-size: 14px;
+}
+
+
  /*===== MEDIA QUERIES =====*/
 
  @media (max-width: 950px) {
+
+
+    .URV {
+        display: flex;
+        background-color: #90292A;
+        justify-content: center;
+        align-items: center;
+    }
 
     .menu-hamburguesa {
         display: flex;
@@ -500,15 +513,13 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #A4A9AD;
-        border: 1px solid #000000;
+        background-color: #90292A;
     }
     #menu-base-de-dades li{
         flex: 1 0 33%;
         padding: 10px;
         text-align: center;
-   
-
+        border-right: 1px solid #FFFFFF;
     }
 
     #menu-base-de-dades a{
