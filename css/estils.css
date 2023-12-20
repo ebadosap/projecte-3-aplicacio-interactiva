@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Noto Sans', sans-serif;
     color: #231F20;
@@ -16,6 +15,18 @@ main {
 	overflow: hidden;
 	margin: 0 auto;
 	max-width: 1200px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 p {
@@ -82,11 +93,11 @@ header {
     margin: 0 12px 0 0;
 }
 
-.descripcio h2 {
+.descripcio h1 {
     display: flex;
-    text-align: start;
+    text-align: center;
     justify-content: center;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
 }
 
 .descripcio p {
@@ -167,41 +178,33 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+    padding-bottom: 30px;
     background-color: #DBD9D6;
 }
 
-.instruccions-cerca h2 {
-
-    width: 1600px;
+.instruccions-cerca h1 {
+    flex: 1 0 100%;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    margin: 30px;
 }
 
-.booleans {
-    flex: 1;
-    min-width: 250px;
-    max-width: 350px;
-    text-align: start;
-    margin: 18px;
-}
-
-.booleans h3,
-.truncaments h3 {
-    margin-bottom: 10px;
-}
-
+.booleans,
 .truncaments {
-    flex: 1;
-    min-width: 250px;
-    max-width: 350px;
+    flex: 1 0 40%;
     text-align: start;
-    margin: 18px;
+    margin-left: 50px;
+}
+
+.booleans h2,
+.truncaments h2 {
+    margin-bottom: 15px;
+
 }
 
 .booleans li,
 .truncaments li {
-    margin-bottom: 5px;
+    margin: 0 50px 5px 0;
 }
 
  /*===== CERCA =====*/
@@ -226,16 +229,16 @@ header {
 
  }
 
- .filtres h2 {
+ .filtres h1 {
     padding: 15px;
  }
 
- .filtres h3 {
+ .filtres h2 {
     margin: 10px 0 0 10px;
     padding: 10px;
  }
 
- .filtres h4 {
+ .filtres h3 {
     margin-left: 10px;
     padding: 5px 0 0 10px;
  }
@@ -252,7 +255,7 @@ header {
  }
 
 
- .resultats h2 {
+ .resultats h1 {
     padding: 15px;
  }
 
@@ -263,7 +266,7 @@ header {
     background-color: #DBD9D6;
  }
 
- .presentacio-resultats h2 {
+ .presentacio-resultats h1 {
     flex: 1 0 100%;
  }
 
@@ -343,9 +346,10 @@ header {
  }
 
  .fletxa-torna-cerca img {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 2%;
     width: 50px;
     height: auto;
+    background-color: #DBD9D6;
  }
 
  .fitxa {
@@ -355,13 +359,13 @@ header {
 
  }
 
- .fitxa h2 {
-    margin: 0 4% 2% 6%;
+ .fitxa h1 {
+    margin: 0 4% 2% 4%;
     padding: 1%;
  }
 
  .fitxa li {
-    margin: 0 8% 0 8%;
+    margin: 0 5% 0 5%;
     padding: 1%;
     text-align: justify;
  }
@@ -414,7 +418,7 @@ header {
 
 
 .menu-suport li {
-    min-width: 130px;
+    min-width: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -423,6 +427,7 @@ header {
 }
 
 .menu-suport a {
+    min-width: 130px;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -449,6 +454,23 @@ header {
  /*===== MEDIA QUERIES =====*/
 
  @media (max-width: 950px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
 
 
     .URV {
@@ -489,6 +511,20 @@ header {
         display: none;
     }
 
+    .booleans,
+    .truncaments {
+    flex: 1 0 50%;
+    margin-left: 15px;
+    }
+
+    .booleans li,
+    .truncaments li {
+        margin: 0 15px 5px 0;
+    }
+
+    .booleans {
+        margin-bottom: 15px;
+    }
 
     .filtres{
         display: none;
@@ -521,7 +557,8 @@ header {
         color: #FFFFFF;
     }
 
-
-
+    .menu-suport ul {
+       flex-wrap: wrap;
+    }
 
  }
