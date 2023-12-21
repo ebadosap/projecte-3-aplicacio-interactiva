@@ -50,6 +50,8 @@ header {
 }
 
 .URV img {
+    width: 302px;
+    height: auto;
     margin-left: 28px;
 }
 
@@ -92,6 +94,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.itemCarruselTarjeta img {
+    width: 250px;
+    height: auto;
 }
 
 .itemCarruselFletxes {
@@ -185,7 +192,7 @@ header {
     font-size: 24px;
 }
 
-#cercador {
+.cercador {
     margin: 12px auto;
     height: auto;
     padding: 8px 20px 8px 5px;
@@ -195,30 +202,20 @@ header {
     gap: 6px;
 }
 
-#cercador input {
-    padding-right: 50px;
+#cercar {
+    margin-top: 5px;
+    padding: 8px 200px 8px 5px;
+
 }
 
-#cercador form {
-    margin-left: 50px;
-}
-
-#cercador a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 31px;
-    height: 31px;
-}
-
-#cercador button {
-    background-color: #90292A;
-    border: 1px solid #90292A;
-}
-
- #cercador img {
-    width: 22px;
+.cercador img {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 35px;
     height: auto;
+    background-color: #90292A;
  }
 
 .instruccions-cerca {
@@ -324,6 +321,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#area-1,
+#area-2,
+#area-3 {
+    padding: 5px 30px 5px 3px;
 }
 
 .resultats-cerca {
@@ -530,10 +533,14 @@ header {
 
     .menu-hamburguesa {
         display: flex;
-        width: 50px;
-        height: auto;
         min-width: 50px;
-        margin: 13px 20px 0 0;
+        margin-top: 15px;
+        margin-left: -50px;
+    }
+
+    .menu-hamburguesa img {
+        width: 65px;
+        height: auto;
     }
 
     .motor-de-cerca {
@@ -542,17 +549,13 @@ header {
         align-items: center;
     }
 
-    #cercador {
+    .cercador {
         margin: 10px 0 5px 0;
     }
 
-    #cercador button{
-        margin-top: 5px;
-    }
-    
-
-    #cercador form {
-        margin: auto;
+    #cercar {
+        margin-left: 30px;
+        padding: 8px 40px 8px 5px;
     }
     
     .menu-cerca {
