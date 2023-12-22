@@ -67,7 +67,7 @@
         </nav>
         <!--./Menú dispositius mòbils -->
 
-        <section class="base-de-dades">
+        <div class="base-de-dades">
             <article class="filtres">
                 <h1>Refinar els teus resultats</h1>
                     <h2>Disponibilitat</h2>
@@ -85,10 +85,12 @@
                         <h3>Des de - Fins a</h3>
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="cbox3" value="tercer-checkbox">
+                                    <input type="checkbox" value="tercer-checkbox">
                                     <label for="cbox3">
-                                        <input type="date">
-                                        <input type="date">
+                                        <input type="date" id="cbox3">
+                                    </label>
+                                    <label for="cbox-3">
+                                        <input type="date" id="cbox-3">
                                     </label>
                                 </li>
                             </ul>
@@ -239,22 +241,22 @@
 
                 <nav class="numero-pagines">
                     <ul>
-                        <li><a href="#"><img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra" width="25px"height="auto"></a></li>
+                        <li><a href="#"><img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra"></a></li>
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
-                        <li><a href="#"><img src="../images/fletxa-dreta.svg" alt="Fletxa dreta" width="25px"height="auto"></a></li>
+                        <li><a href="#"><img src="../images/fletxa-dreta.svg" alt="Fletxa dreta"></a></li>
                     </ul>
                 </nav>
 
             </article>
-        </section>
+        </div>
     </main>
 
     <footer>
 
         <div class="logo-CRAI">
-            <a href="https://www.crai.urv.cat/ca/" title="Lloc web del CRAI URV"><img src="../images/logotip-CRAI-blanc.png" alt="Logotip del CRAI" width="300px" height="auto"></a>
+            <a href="https://www.crai.urv.cat/ca/" title="Lloc web del CRAI URV"><img src="../images/logotip-CRAI-blanc.png" alt="Logotip del CRAI"></a>
         </div>
 
         <nav class="menu-suport">
